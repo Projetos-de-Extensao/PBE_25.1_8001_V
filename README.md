@@ -2,7 +2,7 @@
 Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
 **!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
 
-**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2024.1_PFE1_ProjetoPandora!!**
+**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2025.1_PBE5_ProjetoPandora!!**
  
  (Apague essa seção)
 
@@ -14,8 +14,12 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 202402851756  |  Arthur Peixoto Schiller |
+| xx/xxxxxx  |  Guilherme  |
+| xx/xxxxxx  |  Lucca Barcellos |
+| xx/xxxxxx  |  João Gabriel Miguel |
+| 202307539783  |  Maria Claudia Freitas |
+
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
