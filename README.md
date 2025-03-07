@@ -8,15 +8,15 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 
 # NomedoProjeto
 
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 5<br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
 | 202402851756  |  Arthur Peixoto Schiller |
-| xx/xxxxxx  |  Guilherme  |
-| xx/xxxxxx  |  Lucca Barcellos |
+| 202402697668  |  Guilherme Parrdelhas de Araújo  |
+| 202402630776  |  Lucca Barcelos Cravo |
 | xx/xxxxxx  |  João Gabriel Miguel |
 | 202307539783  |  Maria Claudia Freitas |
 
