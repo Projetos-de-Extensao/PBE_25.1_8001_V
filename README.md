@@ -8,10 +8,11 @@
 | -- | -- |
 | 202402851756  |  Arthur Peixoto Schiller |
 | 202402697668  |  Guilherme Parrdelhas de Araújo  |
+| 202301222401  |  Luã Japiassu Macedo Maia |
 | 202402630776  |  Lucca Barcelos Cravo |
 | 202401667145  |  João Gabriel Miguel |
 | 202307539783  |  Maria Claudia Freitas |
-| 202301222401  |  Luã Japiassu Macedo Maia |
+
 
 
 ## Sobre 
