@@ -18,3 +18,14 @@ Embora não haja muitas soluções específicas voltadas exclusivamente para ent
 - **Kerry Logistics**: Fornece serviços de transporte porta-a-porta em várias cidades importantes do Brasil, incluindo soluções personalizadas que podem atender a regiões de difícil acesso.
 - **FedEx**: Oferece um portfólio abrangente de soluções de envio internacional, incluindo entregas prioritárias e econômicas, com serviços de entrega porta-a-porta.
 - **DHL**: Especializada em envios internacionais, serviços de correio e transporte, com soluções que podem ser adaptadas para atender a regiões insulares.
+
+# Tamanho do mercado
+​Determinar o tamanho exato do mercado de entregas em ilhas, tanto no Brasil quanto no mundo, é desafiador devido à falta de dados específicos sobre esse segmento.
+
+### Mercado Logístico Global
+
+O mercado global de serviços de courier e entrega foi avaliado em aproximadamente US$ 407,1 bilhões em 2023 . Além disso, o mercado global de remessa e logística foi estimado em cerca de US$ 5,7 trilhões em 2024, com previsão de crescimento para US$ 8,1 trilhões até 2033, indicando um crescimento anual composto (CAGR) de aproximadamente 4,02% .​
+
+### Mercado Logístico Brasileiro
+
+No contexto brasileiro, o mercado de frete e logística foi estimado em US$ 111,1 bilhões em 2025, com projeção de alcançar US$ 140,7 bilhões até 2030, crescendo a uma taxa composta anual de 4,83% . Especificamente, o mercado de logística de terceiros (3PL) no Brasil foi avaliado em US$ 30,75 bilhões em 2023, com expectativa de crescimento a uma taxa composta anual de 7,1% de 2024 a 2030 
