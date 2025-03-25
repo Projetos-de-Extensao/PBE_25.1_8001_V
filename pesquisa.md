@@ -1,3 +1,9 @@
+# BrainStorm
+- ### Jetskis
+- ### Barco mesmo pequeno, horarios marcados durante o dia (pedidos saindo de uma em uma hora) e feitos com um certo tempo de antecedência, uma taxa de entrega de 15 reais mais ou menos
+- ### App para melhor gestão do ilha delivery
+
+
 # 5W2H
 
 ### **1. What (O que?)**
