@@ -22,6 +22,11 @@ Embora não haja muitas soluções específicas voltadas exclusivamente para ent
 O artigo “A Sustainable Logistics Model for Parcel Delivery in Small Islands: The Case of Lipari” propõe integrar serviços navais a armários de encomendas automatizados, otimizando a logística na última milha. Testado na ilha de Lipari (Itália), o modelo mostrou redução no tempo de espera em relação às entregas tradicionais.  
 [Leia o artigo completo](https://www.mdpi.com/2071-1050/15/9/7535)
 
+
+### Possível Integração com API do iFood
+A API do iFood oferece funcionalidades úteis para distribuidores logísticos, incluindo o gerenciamento de entregas e uso de frota externa. No entanto, sua aplicação em ilhas depende da cobertura da plataforma e da infraestrutura local. Para ilhas com logística mais estruturada, pode servir como uma solução escalável e conectada a um app de gestão local.
+
+
 # Tamanho do mercado
 ​Determinar o tamanho exato do mercado de entregas em ilhas, tanto no Brasil quanto no mundo, é desafiador devido à falta de dados específicos sobre esse segmento.
 
