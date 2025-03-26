@@ -14,6 +14,9 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 ## Brainstorm
+
+![Captura de tela 2025-03-26 101231](https://github.com/user-attachments/assets/0173f459-3b5f-4f3b-8993-a95c5658a33b)
+
  
 ## Versão 1.0
  
