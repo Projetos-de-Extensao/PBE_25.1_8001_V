@@ -26,7 +26,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ### Mapa mental 2
  
-[![Mapa mental Brainstorm](../assets/Mapas_Mentais/PBE.20255-1.jpg)](../assets/Mapas_Mentais/PBE.20255-1.jpg)
+[![Mapa mental Brainstorm](../assets/Mapas%20Mentais/PBE.2025-1.jpg)](../assets/Mapas%20Mentais/PBE.2025-1.jpg)
  
 ## Conclusão
  
