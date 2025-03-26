@@ -54,7 +54,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 3. Como será a forma de adicionar produtos?
  
 <p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
+<b>XXXX</b> - como buscar o produto, como selecionar o produto e como comprar o produto
 </p>
  
 <p align = "justify">
