@@ -1,8 +1,36 @@
 @startmindmap
 
-* Olive
-** ObjectAttributeFontSize
-** package
+* Plataforma de Entregas - Ilha Delivery
+  ** Objetivo Principal
+    *** Deve ser uma plataforma onde qualquer pessoa possa cadastrar pedidos de diferentes estabelecimentos e acompanhar sua entrega em tempo real.
+    *** A plataforma deve fornecer um meio eficiente de comunicação entre clientes, entregadores e o Ilha Delivery.
+    *** O objetivo da aplicação é facilitar a logística de entregas para a Ilha Primeira.
+    *** O principal objetivo da aplicação é centralizar a comunicação e o rastreamento de pedidos.
+    *** A plataforma deve gerenciar pedidos de diferentes origens e permitir pagamentos pelo app.
+  
+  ** Cadastro de Usuários
+    *** O moderador deverá validar o cadastro de novos estabelecimentos.
+    *** O cliente poderá se cadastrar livremente para acompanhar entregas e realizar pedidos.
+    *** Com o usuário logado, ele poderá visualizar os estabelecimentos disponíveis e solicitar produtos.
+    *** O cliente poderá adicionar seu endereço de entrega e acompanhar compras em tempo real.
+    *** Qualquer usuário poderá se cadastrar como entregador.
+  
+  ** Adição de Produtos
+    *** Apenas restaurantes, lojas e e-commerces cadastrados poderão adicionar produtos.
+    *** O produto terá descrição, preço, categoria e tempo estimado de entrega.
+    *** Os produtos variam conforme os estabelecimentos cadastrados.
+    *** Integração com lojas externas como Amazon e marketplaces para rastreamento de pedidos.
+  
+  ** Rastreamento e Comunicação
+    *** Com a localização ativa, clientes poderão visualizar status da entrega em tempo real.
+    *** O cliente terá acesso a atualizações de status como "chegou ao galpão", "em trânsito", "chegou na ilha" e "entregue".
+    *** A comunicação entre clientes e entregadores será feita diretamente no app.
+  
+  ** Funcionalidades Adicionais
+    *** O cliente poderá selecionar produtos e adicionar ao carrinho.
+    *** Será possível personalizar pedidos.
+    *** Informações detalhadas sobre status do pedido em tempo real.
+    *** O cliente poderá acessar tempo estimado de entrega e histórico de pedidos.
+    *** O usuário poderá visualizar uma linha do tempo da entrega.
 
--- Esquerda
---- Esquerda
+@endmindmap
