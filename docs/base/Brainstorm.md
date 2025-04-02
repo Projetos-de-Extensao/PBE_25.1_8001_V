@@ -21,82 +21,52 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ## Versão 1.0
  
 ## Perguntas
- 
-### 1. Qual o objetivo principal da aplicação?
- 
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo clientetorneio?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - como buscar o produto, como selecionar o produto e como comprar o produto
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+### **1. Qual o objetivo principal da aplicação?**  
+- **XXXX** - Deve ser uma plataforma onde qualquer pessoa possa cadastrar pedidos de diferentes estabelecimentos e acompanhar sua entrega em tempo real.  
+- **ZZZ** - A plataforma deve fornecer um meio eficiente de comunicação entre os clientes, entregadores e o Ilha Delivery, substituindo o WhatsApp como principal ferramenta de acompanhamento.  
+- **YYYY** - O objetivo da aplicação é facilitar a logística de entregas para a Ilha Primeira, permitindo que usuários acompanhem pedidos de restaurantes, e-commerces e marketplaces como Amazon.  
+- **WWWW** - O principal objetivo da aplicação é a centralização da comunicação e do rastreamento de pedidos, oferecendo uma experiência similar ao iFood, mas aplicável a qualquer tipo de compra.  
+- **KKKK** - A plataforma deve gerenciar pedidos de diferentes origens, mostrar atualizações de status e permitir que clientes façam pagamentos diretamente pelo app.  
 
- 
 ---
- 
-### 4. Outras perguntas pertinentes ao contexto
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
+### **2. Como será o processo para cadastrar um novo cliente?**  
+- **XXXX** - O moderador deverá fazer login e validar o cadastro de novos estabelecimentos.  
+- **YYYY** - O cliente poderá se cadastrar livremente para acompanhar suas entregas e realizar pedidos.  
+- **WWWW** - Com o usuário logado, ele poderá visualizar os estabelecimentos disponíveis e solicitar produtos.  
+- **ZZZZ** - O cliente poderá adicionar seu endereço de entrega e acompanhar suas compras em tempo real.  
+- **KKK** - Qualquer usuário que quiser ser entregador poderá se cadastrar diretamente no app.  
+
 ---
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
- 
+### **3. Como será a forma de adicionar produtos?**  
+- **XXXX** - Apenas restaurantes, lojas e e-commerces cadastrados poderão adicionar produtos ao sistema.  
+- **YYYYY** - O produto terá uma descrição, preço, categoria e tempo estimado de entrega.  
+- **ZZZZ** - Os produtos disponíveis variam conforme os estabelecimentos cadastrados, podendo incluir desde refeições até itens de e-commerce.  
+- **XXXX** - O sistema permitirá integração com lojas externas como Amazon e marketplaces para acompanhamento de pedidos.  
+
+---
+
+### **4. Outras perguntas pertinentes ao contexto**  
+- **XXXX** - Com a localização ativa, os clientes poderão visualizar o status da entrega em tempo real.  
+- **YYYY** - O cliente terá acesso a atualizações de status, como "chegou ao galpão do Ilha Delivery", "em trânsito para a ilha", "chegou na ilha" e "entregue".  
+- **ZZZ** - A comunicação entre clientes e entregadores será feita diretamente dentro do app, eliminando a necessidade do WhatsApp.  
+
+---
+
+### **5. Como seria a forma de adicionar produtos pelo cliente?**  
+- **XXX** - O cliente poderá selecionar produtos dentro dos estabelecimentos cadastrados e adicionar ao carrinho.  
+- **YYY** - Será possível personalizar pedidos, como escolher opções adicionais ou remover itens específicos.  
+
+---
+
+### **6. Quais informações seriam interessantes para o cliente?**  
+- **XXX** - Informações detalhadas sobre o status do pedido em tempo real.  
+- **ZZZZ** - O cliente usuário poderá acessar informações sobre tempo estimado de entrega, histórico de pedidos e status da entrega.  
+- **WWWW** - O usuário poderá visualizar uma linha do tempo da entrega, incluindo status como "chegou ao galpão", "em trânsito" e "entregue".  
+
+
 ### Requisitos elicitados
  
 |ID|Descrição|
