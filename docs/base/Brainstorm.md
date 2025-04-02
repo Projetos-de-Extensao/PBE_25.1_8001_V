@@ -15,7 +15,6 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ## Brainstorm
 
-![Captura de tela 2025-03-26 101231](https://github.com/user-attachments/assets/0173f459-3b5f-4f3b-8993-a95c5658a33b)
 ![Mapa Mental](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Mapas%20Mentais/mapaMental.png)
 
  
