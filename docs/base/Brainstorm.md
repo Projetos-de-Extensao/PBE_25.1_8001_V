@@ -18,53 +18,65 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ![Mapa Mental](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Mapas%20Mentais/mapaMental.png)
 
  
-## Versão 1.0
- 
-## Perguntas
+## **Versão 1.0**
 
-### **1. Qual o objetivo principal da aplicação?**  
-- **XXXX** - Deve ser uma plataforma onde qualquer pessoa possa cadastrar pedidos de diferentes estabelecimentos e acompanhar sua entrega em tempo real.  
-- **ZZZ** - A plataforma deve fornecer um meio eficiente de comunicação entre os clientes, entregadores e o Ilha Delivery, substituindo o WhatsApp como principal ferramenta de acompanhamento.  
-- **YYYY** - O objetivo da aplicação é facilitar a logística de entregas para a Ilha Primeira, permitindo que usuários acompanhem pedidos de restaurantes, e-commerces e marketplaces como Amazon.  
-- **WWWW** - O principal objetivo da aplicação é a centralização da comunicação e do rastreamento de pedidos, oferecendo uma experiência similar ao iFood, mas aplicável a qualquer tipo de compra.  
-- **KKKK** - A plataforma deve gerenciar pedidos de diferentes origens, mostrar atualizações de status e permitir que clientes façam pagamentos diretamente pelo app.  
+## **Perguntas**
 
 ---
 
-### **2. Como será o processo para cadastrar um novo cliente?**  
-- **XXXX** - O moderador deverá fazer login e validar o cadastro de novos estabelecimentos.  
-- **YYYY** - O cliente poderá se cadastrar livremente para acompanhar suas entregas e realizar pedidos.  
-- **WWWW** - Com o usuário logado, ele poderá visualizar os estabelecimentos disponíveis e solicitar produtos.  
-- **ZZZZ** - O cliente poderá adicionar seu endereço de entrega e acompanhar suas compras em tempo real.  
-- **KKK** - Qualquer usuário que quiser ser entregador poderá se cadastrar diretamente no app.  
+### **1. Qual o objetivo principal da aplicação?**
+
+- **XXXX** – Criar uma plataforma que centralize pedidos e entregas de diferentes canais (restaurantes, e-commerces, marketplaces) com acompanhamento em tempo real.
+- **YYYY** – Substituir canais informais como WhatsApp para acompanhamento de pedidos, usando um app completo com chat, notificações e status atualizados.
+- **ZZZZ** – Facilitar a operação logística da Ilha Primeira, oferecendo rastreio detalhado desde a saída do continente até a entrega final.
+- **WWWW** – Oferecer uma solução completa e white-label que possa futuramente ser expandida para outras ilhas ou regiões com logística semelhante.
+- **AAAA** – Reduzir a dependência de operadores manuais para atualizações de status, usando notificações automáticas e painel de gerenciamento.
 
 ---
 
-### **3. Como será a forma de adicionar produtos?**  
-- **XXXX** - Apenas restaurantes, lojas e e-commerces cadastrados poderão adicionar produtos ao sistema.  
-- **YYYYY** - O produto terá uma descrição, preço, categoria e tempo estimado de entrega.  
-- **ZZZZ** - Os produtos disponíveis variam conforme os estabelecimentos cadastrados, podendo incluir desde refeições até itens de e-commerce.  
-- **XXXX** - O sistema permitirá integração com lojas externas como Amazon e marketplaces para acompanhamento de pedidos.  
+### **2. Como será o processo para cadastrar um novo cliente?**
+
+- **XXXX** – O cliente poderá se cadastrar diretamente no app com nome, e-mail, telefone e endereço de entrega.
+- **YYYY** – Após o cadastro, o cliente terá acesso ao painel com pedidos em andamento, histórico e estabelecimentos disponíveis.
+- **ZZZZ** – Poderá haver login com redes sociais (Google, Facebook) para agilizar o cadastro.
+- **WWWW** – Clientes poderão cadastrar múltiplos endereços e definir favoritos para pedidos recorrentes.
 
 ---
 
-### **4. Outras perguntas pertinentes ao contexto**  
-- **XXXX** - Com a localização ativa, os clientes poderão visualizar o status da entrega em tempo real.  
-- **YYYY** - O cliente terá acesso a atualizações de status, como "chegou ao galpão do Ilha Delivery", "em trânsito para a ilha", "chegou na ilha" e "entregue".  
-- **ZZZ** - A comunicação entre clientes e entregadores será feita diretamente dentro do app, eliminando a necessidade do WhatsApp.  
+### **3. Como será a forma de adicionar produtos?**
+
+- **XXXX** – Apenas administradores de estabelecimentos cadastrados poderão adicionar/editar produtos no sistema.
+- **YYYY** – Os produtos terão nome, descrição, imagem, categoria, preço, tempo estimado de entrega e disponibilidade.
+- **ZZZZ** – A aplicação permitirá integração com catálogos externos (ex: Shopify, WooCommerce, marketplaces) para automação do cadastro.
+- **WWWW** – Será possível aplicar promoções e descontos personalizados para determinados produtos ou categorias.
 
 ---
 
-### **5. Como seria a forma de adicionar produtos pelo cliente?**  
-- **XXX** - O cliente poderá selecionar produtos dentro dos estabelecimentos cadastrados e adicionar ao carrinho.  
-- **YYY** - Será possível personalizar pedidos, como escolher opções adicionais ou remover itens específicos.  
+### **4. Outras perguntas pertinentes ao contexto**
+
+- **XXXX** – Os entregadores poderão mudar o status do pedido manualmente conforme a entrega evolui (ex: saiu para entrega, chegou na ilha, entregue).
+- **YYYY** – Os clientes receberão notificações automáticas (push ou WhatsApp API) com cada atualização de status.
+- **ZZZZ** – O sistema terá uma área de administração com painel analítico para acompanhar pedidos, entregadores e status em tempo real.
+- **WWWW** – Será possível adicionar avaliações pós-entrega para entregadores e estabelecimentos.
+- **VVVV** – Os estabelecimentos poderão ver métricas como número de pedidos entregues, tempo médio de entrega e cancelamentos.
 
 ---
 
-### **6. Quais informações seriam interessantes para o cliente?**  
-- **XXX** - Informações detalhadas sobre o status do pedido em tempo real.  
-- **ZZZZ** - O cliente usuário poderá acessar informações sobre tempo estimado de entrega, histórico de pedidos e status da entrega.  
-- **WWWW** - O usuário poderá visualizar uma linha do tempo da entrega, incluindo status como "chegou ao galpão", "em trânsito" e "entregue".  
+### **5. Como seria a forma de adicionar produtos pelo cliente?**
+
+- **XXX** – O cliente seleciona os produtos disponíveis em estabelecimentos listados e adiciona ao carrinho.
+- **YYY** – Será possível editar o pedido, escolher adicionais, comentários (ex: sem cebola), e visualizar o tempo estimado.
+- **ZZZ** – Após confirmar o pedido, o cliente poderá acompanhar todo o processo no app, com opção de chat com o entregador.
+
+---
+
+### **6. Quais informações seriam interessantes para o cliente?**
+
+- **XXX** – Status atualizado em tempo real com etapas personalizadas como "chegou no galpão", "em trânsito", "chegou na ilha", "entregue".
+- **YYYY** – Tempo estimado de entrega com base em entregas anteriores + localização atual do pedido.
+- **ZZZZ** – Histórico de pedidos com detalhes, possibilidade de repetir pedido anterior e exportar comprovante.
+- **WWWW** – Acesso a chat com entregador e notificações visuais/sonoras para cada alteração no status.
+- **VVVV** – Mapa com o trajeto da entrega (se disponível) ou status textual com última atualização.
 
 
 ### Requisitos elicitados
