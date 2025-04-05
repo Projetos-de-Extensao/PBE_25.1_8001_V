@@ -1,0 +1,53 @@
+@startuml
+actor Cliente
+actor Entregador
+actor Administrador
+actor Sistema
+
+usecase "Cadastro de Usuário" as UC01
+usecase "Login" as UC02
+usecase "Criar Pedido" as UC03
+usecase "Adicionar Detalhes ao Pedido" as UC03a
+usecase "Atribuir Pedido a um Entregador" as UC04
+usecase "Atualizar Status do Pedido" as UC05
+usecase "Acompanhar Pedido" as UC06
+usecase "Cancelar Pedido" as UC06a
+usecase "Reembolsar Pedido" as UC06b
+usecase "Enviar Notificação" as UC07
+usecase "Chat Cliente-Entregador" as UC08
+usecase "Gerenciar Usuários" as UC09
+usecase "Gerar Relatórios de Pedidos" as UC10
+usecase "Gerenciar Entregadores" as UC11
+usecase "Autenticar Administrador" as UC12
+
+Cliente --> UC01
+Cliente --> UC02
+Cliente --> UC03
+Cliente --> UC06
+Cliente --> UC08
+
+UC03 .> UC03a : <<include>> 
+
+Cliente .> UC06a : <<extend>>
+Cliente .> UC06b : <<extend>>
+
+Entregador --> UC02
+Entregador --> UC05
+Entregador --> UC08
+
+Administrador --> UC02
+Administrador --> UC04
+Administrador --> UC09
+Administrador --> UC10
+Administrador --> UC11
+Administrador --> UC12
+
+UC02 .> UC12 : <<extend>>
+
+Sistema --> UC07
+
+UC06 .> UC07 : <<include>>
+UC05 .> UC07 : <<include>>
+UC04 .> UC07 : <<include>>
+
+@enduml

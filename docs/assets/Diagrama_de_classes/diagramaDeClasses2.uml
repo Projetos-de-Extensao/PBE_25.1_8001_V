@@ -1,0 +1,96 @@
+@startuml
+class Cliente {
+    id
+    nome
+    email
+    senha
+    endereco
+    telefone
+    fazerPedido()
+    acompanharPedido()
+    cancelarPedido()
+    conversarEntregador()
+}
+
+class Pedido {
+    id
+    status
+    itens
+    valorTotal
+    enderecoEntrega
+    dataCriacao
+    dataEntrega
+    atualizarStatus()
+    calcularValorTotal()
+}
+
+class ItemPedido {
+    id
+    nome
+    quantidade
+    preco
+}
+
+class Entregador {
+    id
+    nome
+    email
+    telefone
+    veiculo
+    status
+    entregarPedido()
+    atualizarStatusPedido()
+    conversarCliente()
+}
+
+class Administrador {
+    id
+    nome
+    email
+    senha
+    gerenciarUsuarios()
+    gerarRelatorios()
+    gerenciarEntregadores()
+}
+
+class Notificacao {
+    id
+    mensagem
+    destinatario
+    enviar()
+}
+
+class Pagamento {
+    id
+    metodo
+    status
+    valor
+    processarPagamento()
+    reembolsar()
+}
+
+class Chat {
+    id
+    remetente
+    destinatario
+    mensagens
+    enviarMensagem()
+    receberMensagem()
+}
+
+Cliente --> Pedido : realiza
+Pedido --> ItemPedido : contém
+Pedido --> Entregador : é entregue por
+Pedido --> Pagamento : possui
+Pedido --> Notificacao : gera
+Pedido --> Chat : possibilita comunicação
+Entregador --> Chat : participa
+Administrador --> Entregador : gerencia
+Administrador --> Cliente : gerencia
+Administrador --> Pedido : monitora
+Notificacao --> Cliente : notifica
+Notificacao --> Entregador : notifica
+Pagamento --> Cliente : realiza pagamento
+Pagamento --> Pedido : pertence
+
+@enduml
