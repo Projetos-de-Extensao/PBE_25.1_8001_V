@@ -2,6 +2,7 @@
 
 # Ideias de inovação
 ### Jetskis
+Ao menos um funcionário, custeado pela associação de moradores, ficará responsável pela logística dos pedidos por meio de um jetski, proporcionando entregas rápidas e eficientes para os comércios e pessoas da ilha primeira
 
 ### Barco
 Horarios marcados durante o dia (pedidos saindo de uma em uma hora) e feitos com um certo tempo de antecedência, uma taxa de entrega de 15 reais mais ou menos
