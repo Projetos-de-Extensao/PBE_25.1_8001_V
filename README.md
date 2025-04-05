@@ -16,7 +16,7 @@
 
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Nosso projeto tem como objetivo implementar um sistema eficiente e acessivel de entregas a Ilha Primeira, visando facilitar o comércio externo e interno da ilha.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
