@@ -16,7 +16,7 @@
 
 
 ## Sobre 
-Nosso projeto tem como objetivo implementar um sistema eficiente e acessivel de entregas a Ilha Primeira, visando facilitar o comércio externo e interno da ilha.
+Nosso projeto tem como objetivo desenvolver um aplicativo para facilitar a comunicação e acompanhamento dos pedidos entre a Ilha Delivery e os consumidores da Ilha Primeira, substituindo o WhatsApp e visando melhorar a organização dos pedidos, a comunicação entre consumidor e entregador, e automatizar o processo de entregas.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
