@@ -25,7 +25,7 @@ Para a criação da primeira versão do diagrama de classes, a equipe utilizou o
 
 
 
-![Diagrama de classes]([https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Diagrama_de_classes/primeiroDiagramaClasse.png](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Diagrama_de_classes/diagramaDeClasses2.png))
+![Diagrama de classes](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Diagrama_de_classes/diagramaDeClasses2.png)
 
 ### Versão 1.1
 ![![Diagrama de Classes](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)](../assets/diagrama_de_classes/diagrama_de_classes_1.1.png)
