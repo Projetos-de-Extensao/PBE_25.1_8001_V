@@ -4,62 +4,56 @@
 Este documento descreve os requisitos funcionais e não funcionais para o desenvolvimento da plataforma de entregas Ilha Delivery. O objetivo do sistema é substituir a comunicação via WhatsApp pelo acompanhamento estruturado de pedidos, similar ao iFood, permitindo o rastreamento e gerenciamento de entregas.
 
 ## 2. Requisitos Funcionais
-### 2.1. Cadastro e Autenticação
-- [ ] O sistema deve permitir o cadastro de clientes.
-- [ ] O sistema deve permitir o cadastro de estabelecimentos (restaurantes, lojas e e-commerces).
-- [ ] O sistema deve permitir que entregadores se cadastrem.
-- [ ] O sistema deve permitir login e autenticação segura para clientes, estabelecimentos e entregadores.
-- [ ] O sistema deve suportar login via e-mail/senha e autenticação via redes sociais ou OTP (One-Time Password).
+### **1. Cadastro e Autenticação**
 
-### 2.2. Gestão de Pedidos
-- [ ] O cliente deve poder visualizar os estabelecimentos disponíveis.
-- [ ] O cliente deve poder selecionar produtos e adicionar ao carrinho.
-- [ ] O cliente deve poder personalizar pedidos (exemplo: adicionar/remover ingredientes).
-- [ ] O sistema deve permitir que o cliente finalize a compra e realize o pagamento pelo app.
-- [ ] O sistema deve notificar o estabelecimento sobre novos pedidos.
-- [ ] O estabelecimento deve poder aceitar, preparar e atualizar o status do pedido.
-- [ ] O entregador deve receber notificações sobre pedidos disponíveis para entrega.
-- [ ] O cliente deve receber notificações sobre mudanças no status do pedido.
+- **RF01** - O sistema deve permitir o cadastro de usuários (clientes e entregadores).
+- **RF02** - O sistema deve permitir login e autenticação dos usuários.
+- **RF03** - O administrador deve poder cadastrar entregadores e definir permissões.
 
-### 2.3. Rastreamento e Comunicação
-- [ ] O cliente deve poder visualizar o status da entrega em tempo real.
-- [ ] O sistema deve atualizar automaticamente os status do pedido, como:
-  - Chegou ao galpão do Ilha Delivery
-  - Em trânsito para a ilha
-  - Chegou na ilha
-  - Em rota para entrega
-  - Entregue
-- [ ] O cliente e o entregador devem poder se comunicar diretamente dentro do app.
-- [ ] O sistema deve permitir que o cliente avalie a entrega e o estabelecimento após a finalização do pedido.
+### **2. Gerenciamento de Pedidos**
 
-### 2.4. Histórico e Relatórios
-- [ ] O cliente deve poder visualizar o histórico de pedidos.
-- [ ] O sistema deve gerar relatórios para os estabelecimentos sobre pedidos e vendas.
-- [ ] O sistema deve permitir que os administradores gerenciem usuários e estabelecimentos.
+- **RF04** - O cliente deve poder criar um pedido informando endereço de entrega, descrição e foto dos produtos.
+- **RF05** - O sistema deve permitir que o pedido seja atribuído a um entregador automaticamente ou manualmente.
+- **RF06** - O cliente deve poder acompanhar o status do pedido em tempo real.
+- **RF07** - O entregador deve poder atualizar o status do pedido (ex.: "Em trânsito", "Entregue").
+- **RF08** - O sistema deve permitir que o cliente avalie a entrega e o entregador.
+
+### **3. Notificações e Comunicação**
+
+- **RF09** - O sistema deve enviar notificações push para os usuários sobre o status do pedido.
+- **RF10** - O entregador deve receber notificações quando um novo pedido for atribuído a ele.
+- **RF11** - O sistema deve permitir que clientes e entregadores se comuniquem via chat.
+
+### **4. Painel Administrativo**
+
+- **RF12** - O administrador deve poder visualizar todos os pedidos e seu status.
+- **RF13** - O sistema deve permitir exportação de relatórios de entregas.
+- **RF14** - O administrador deve poder gerenciar os entregadores e clientes.
+
+### **5. Integração com APIs Externas**
+
+- **RF15** - O sistema deve integrar-se à API do iFood para importar pedidos automaticamente.
+- **RF16** - O sistema deve permitir integração com serviços de pagamento online (Pix, cartão de crédito).
 
 ## 3. Requisitos Não Funcionais
-### 3.1. Segurança
-- [ ] O sistema deve implementar criptografia para armazenamento de senhas.
-- [ ] O sistema deve garantir transações seguras utilizando protocolos como HTTPS e TLS.
-- [ ] O sistema deve seguir boas práticas de proteção contra ataques como SQL Injection e XSS.
+### **1. Desempenho e Escalabilidade**
 
-### 3.2. Desempenho
-- [ ] O sistema deve ser escalável para suportar um grande número de usuários simultâneos.
-- [ ] O tempo de resposta para ações críticas (login, atualização de status de pedidos) deve ser inferior a 2 segundos.
+- **RNF01** - O sistema deve suportar pelo menos 1000 usuários simultâneos.
+- **RNF02** - O tempo de resposta para qualquer operação não deve exceder 3 segundos.
 
-### 3.3. Usabilidade
-- [ ] A interface deve ser intuitiva e de fácil navegação para diferentes perfis de usuários.
-- [ ] O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops.
+### **2. Segurança**
 
-### 3.4. Integrações
-- [ ] O sistema deve permitir integração com gateways de pagamento.
-- [ ] O sistema deve permitir integração com serviços de rastreamento de entrega.
-- [ ] O sistema deve permitir integração com marketplaces como Amazon para atualização de status de pedidos.
+- **RNF03** - O sistema deve utilizar autenticação JWT para login seguro.
+- **RNF04** - Os dados sensíveis devem ser armazenados de forma criptografada.
+- **RNF05** - O sistema deve ter um mecanismo de recuperação de senha via e-mail.
 
-## 4. Perguntas e Considerações
-1. O sistema permitirá pedidos programados ou apenas pedidos em tempo real?
-2. Haverá suporte para múltiplos meios de pagamento, como Pix, cartão de crédito e boleto?
-3. Os estabelecimentos terão um painel administrativo para gerenciar seus pedidos?
-4. Os clientes poderão cancelar pedidos após a confirmação?
-5. Os entregadores terão um sistema de rating baseado nas entregas realizadas?
-6. Haverá algum sistema de fidelidade ou cashback para incentivar o uso contínuo da plataforma?
+### **3. Usabilidade e Acessibilidade**
+
+- **RNF06** - O aplicativo deve seguir boas práticas de UI/UX para facilitar a navegação dos usuários.
+- **RNF07** - O sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela.
+
+### **4. Manutenibilidade e Tecnologia**
+
+- **RNF08** - O backend deve ser desenvolvido em Django + Django Rest Framework.
+- **RNF09** - O frontend do aplicativo deve ser desenvolvido em React Native.
+- **RNF10** - O código deve ser modular para facilitar futuras atualizações.
