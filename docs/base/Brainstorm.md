@@ -78,6 +78,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 - Dados do entregador (nome, horário estimado de entrega, etc).
 - Localização aproximada do entregador quando estiver em rota.
 
+
 ### Requisitos elicitados
  
 |ID|Descrição|
