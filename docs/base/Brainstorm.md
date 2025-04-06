@@ -26,58 +26,57 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 
 ### **1. Qual o objetivo principal da aplicação?**
 
-- **XXXX** – Criar uma plataforma que centralize pedidos e entregas de diferentes canais (restaurantes, e-commerces, marketplaces) com acompanhamento em tempo real.
-- **YYYY** – Substituir canais informais como WhatsApp para acompanhamento de pedidos, usando um app completo com chat, notificações e status atualizados.
-- **ZZZZ** – Facilitar a operação logística da Ilha Primeira, oferecendo rastreio detalhado desde a saída do continente até a entrega final.
-- **WWWW** – Oferecer uma solução completa e white-label que possa futuramente ser expandida para outras ilhas ou regiões com logística semelhante.
-- **AAAA** – Reduzir a dependência de operadores manuais para atualizações de status, usando notificações automáticas e painel de gerenciamento.
+- **JetEntregas** – Facilitar a entrega de pedidos online para moradores da Ilha Primeira.
+- **Automatizar a entrega** – Notificar automaticamente o cliente assim que o pedido chegar ao locker.
+- **Resolver o gargalo logístico** – Intermediar a entrega entre terra firme e ilha com agilidade.
+- **Atender regiões de difícil acesso** – Criar uma solução de última milha eficiente para locais isolados.
+- **Centralizar informações de entrega** – O app concentra status, histórico e notificações.
 
 ---
 
 ### **2. Como será o processo para cadastrar um novo cliente?**
 
-- **XXXX** – O cliente poderá se cadastrar diretamente no app com nome, e-mail, telefone e endereço de entrega.
-- **YYYY** – Após o cadastro, o cliente terá acesso ao painel com pedidos em andamento, histórico e estabelecimentos disponíveis.
-- **ZZZZ** – Poderá haver login com redes sociais (Google, Facebook) para agilizar o cadastro.
-- **WWWW** – Clientes poderão cadastrar múltiplos endereços e definir favoritos para pedidos recorrentes.
+- O cliente se cadastra no app **JetEntregas**, informando endereço completo (incluindo ilha).
+- O app usa o endereço e CPF como identificador para **vincular pedidos futuros** feitos em plataformas como iFood/Amazon.
+- Não há necessidade de o cliente informar o pedido manualmente.
+- O vínculo inicial é feito **comparando o endereço e CPF**; futuramente será por **integração via API**.
 
 ---
 
-### **3. Como será a forma de adicionar produtos?**
+### **3. Como será a forma de adicionar pedidos?**
 
-- **XXXX** – Apenas administradores de estabelecimentos cadastrados poderão adicionar/editar produtos no sistema.
-- **YYYY** – Os produtos terão nome, descrição, imagem, categoria, preço, tempo estimado de entrega e disponibilidade.
-- **ZZZZ** – A aplicação permitirá integração com catálogos externos (ex: Shopify, WooCommerce, marketplaces) para automação do cadastro.
-- **WWWW** – Será possível aplicar promoções e descontos personalizados para determinados produtos ou categorias.
+- O cliente **não adiciona manualmente** o pedido.
+- O sistema detecta automaticamente quando um pedido de e-commerce é entregue no **locker da JetEntregas**.
+- O pedido é então **vinculado automaticamente** ao perfil do cliente com base no endereço de entrega e CPF.
+- Após isso, o cliente é **notificado pelo app** que o pedido chegou e está a caminho da ilha.
 
 ---
 
 ### **4. Outras perguntas pertinentes ao contexto**
 
-- **XXXX** – Os entregadores poderão mudar o status do pedido manualmente conforme a entrega evolui (ex: saiu para entrega, chegou na ilha, entregue).
-- **YYYY** – Os clientes receberão notificações automáticas (push ou WhatsApp API) com cada atualização de status.
-- **ZZZZ** – O sistema terá uma área de administração com painel analítico para acompanhar pedidos, entregadores e status em tempo real.
-- **WWWW** – Será possível adicionar avaliações pós-entrega para entregadores e estabelecimentos.
-- **VVVV** – Os estabelecimentos poderão ver métricas como número de pedidos entregues, tempo médio de entrega e cancelamentos.
+- O entregador da JetEntregas tem acesso aos lockers com chave/código.
+- O sistema notifica o entregador sobre novos pedidos a serem retirados.
+- Toda a operação de retirada e entrega é feita por **um funcionário fixo** da JetEntregas, com carteira de jetski.
+- O locker é o ponto de transição entre o **e-commerce tradicional e a entrega Jet**.
+- Não há necessidade de o cliente interagir com entregadores do iFood/Amazon.
 
 ---
 
-### **5. Como seria a forma de adicionar produtos pelo cliente?**
+### **5. Como seria a forma do cliente adicionar os pedidos?**
 
-- **XXX** – O cliente seleciona os produtos disponíveis em estabelecimentos listados e adiciona ao carrinho.
-- **YYY** – Será possível editar o pedido, escolher adicionais, comentários (ex: sem cebola), e visualizar o tempo estimado.
-- **ZZZ** – Após confirmar o pedido, o cliente poderá acompanhar todo o processo no app, com opção de chat com o entregador.
+- O cliente **não precisa adicionar manualmente**.
+- O sistema faz o match automático com o endereço.
+- No futuro, o sistema poderá integrar com as APIs de marketplaces para **vinculação instantânea e automática**.
 
 ---
 
 ### **6. Quais informações seriam interessantes para o cliente?**
 
-- **XXX** – Status atualizado em tempo real com etapas personalizadas como "chegou no galpão", "em trânsito", "chegou na ilha", "entregue".
-- **YYYY** – Tempo estimado de entrega com base em entregas anteriores + localização atual do pedido.
-- **ZZZZ** – Histórico de pedidos com detalhes, possibilidade de repetir pedido anterior e exportar comprovante.
-- **WWWW** – Acesso a chat com entregador e notificações visuais/sonoras para cada alteração no status.
-- **VVVV** – Mapa com o trajeto da entrega (se disponível) ou status textual com última atualização.
-
+- Status do pedido (Ex: “Pedido chegou ao locker”, “Pedido a caminho da ilha”, “Pedido entregue”).
+- Notificações push com cada etapa da entrega.
+- Histórico de pedidos entregues.
+- Dados do entregador (nome, horário estimado de entrega, etc).
+- Localização aproximada do entregador quando estiver em rota.
 
 ### Requisitos elicitados
  

@@ -1,59 +1,64 @@
-# Requisitos do Sistema
+## **Requisitos Funcionais (RF)**
 
-## 1. Introdução
-Este documento descreve os requisitos funcionais e não funcionais para o desenvolvimento da plataforma de entregas Ilha Delivery. O objetivo do sistema é substituir a comunicação via WhatsApp pelo acompanhamento estruturado de pedidos, similar ao iFood, permitindo o rastreamento e gerenciamento de entregas.
+Recursos que o sistema **deve obrigatoriamente oferecer** para que o negócio funcione:
 
-## 2. Requisitos Funcionais
-### **1. Cadastro e Autenticação**
+### Cliente (usuário final)
 
-- **RF01** - O sistema deve permitir o cadastro de usuários (clientes e entregadores).
-- **RF02** - O sistema deve permitir login e autenticação dos usuários.
-- **RF03** - O administrador deve poder cadastrar entregadores e definir permissões.
+- **RF01** – O cliente deve poder se cadastrar e fazer login no app JetEntregas via conta google ou correlatas.
+- **RF02** – O cliente deve informar seu **endereço completo**, incluindo o nome da ilha.
+- **RF03** – O sistema deve vincular automaticamente pedidos ao cliente com base no **endereço e CPF** cadastrados.
+- **RF04** – O cliente deve receber **notificações** quando:
+    - O pedido chegar no locker (terra firme)
+    - O pedido estiver em rota para entrega na ilha
+    - O pedido for entregue
+- **RF05** – O cliente deve poder visualizar o **status do pedido em tempo real**.
+- **RF06** – O cliente deve poder consultar seu **histórico de entregas** no app.
 
-### **2. Gerenciamento de Pedidos**
+### Entregador Jet (funcionário fixo)
 
-- **RF04** - O cliente deve poder criar um pedido informando endereço de entrega, descrição e foto dos produtos.
-- **RF05** - O sistema deve permitir que o pedido seja atribuído a um entregador automaticamente ou manualmente.
-- **RF06** - O cliente deve poder acompanhar o status do pedido em tempo real.
-- **RF07** - O entregador deve poder atualizar o status do pedido (ex.: "Em trânsito", "Entregue").
-- **RF08** - O sistema deve permitir que o cliente avalie a entrega e o entregador.
+- **RF07** – O entregador deve visualizar os pedidos disponíveis para retirada nos lockers.
+- **RF08** – O entregador deve marcar no sistema quando o pedido for retirado do locker.
+- **RF09** – O entregador deve marcar no sistema quando o pedido for entregue.
+- **RF10** – O sistema deve registrar o entregador responsável por cada entrega.
+- **RF11** – O entregador deve receber notificações sobre novos pedidos disponíveis no locker.
 
-### **3. Notificações e Comunicação**
+### Sistema/Admin
 
-- **RF09** - O sistema deve enviar notificações push para os usuários sobre o status do pedido.
-- **RF10** - O entregador deve receber notificações quando um novo pedido for atribuído a ele.
-- **RF11** - O sistema deve permitir que clientes e entregadores se comuniquem via chat.
+- **RF12** – O sistema deve cruzar automaticamente dados de endereço para vincular pedidos aos clientes.
+- **RF13** – O sistema deve possibilitar, futuramente, a **integração com APIs de marketplaces**, utilizando **CPF e endereço como critérios de correspondência** de pedidos.
+- **RF14** – O sistema deve controlar os status dos pedidos: `Aguardando no locker`, `Em rota`, `Entregue`.
+- **RF15** – O sistema deve permitir a gestão de entregadores (cadastro, login, entregas realizadas, etc).
 
-### **4. Painel Administrativo**
+---
 
-- **RF12** - O administrador deve poder visualizar todos os pedidos e seu status.
-- **RF13** - O sistema deve permitir exportação de relatórios de entregas.
-- **RF14** - O administrador deve poder gerenciar os entregadores e clientes.
+## **Requisitos Não Funcionais (RNF)**
 
-### **5. Integração com APIs Externas**
+Características que dizem respeito à **qualidade, performance e regras técnicas** do sistema:
 
-- **RF15** - O sistema deve integrar-se à API do iFood para importar pedidos automaticamente.
-- **RF16** - O sistema deve permitir integração com serviços de pagamento online (Pix, cartão de crédito).
+### Técnicos
 
-## 3. Requisitos Não Funcionais
-### **1. Desempenho e Escalabilidade**
+- **RNF01** – O **backend será desenvolvido em Python com Django REST Framework**.
+- **RNF02** – O **frontend será um app mobile em React Native**.
+- **RNF03** – O sistema deve estar pronto para **escalabilidade futura com integração via API**.
+- **RNF04** – A autenticação dos usuários deve ser segura (JWT ou similar).
+- **RNF05** – O sistema deve manter um **registro de logs** de entrega para controle e segurança.
 
-- **RNF01** - O sistema deve suportar pelo menos 1000 usuários simultâneos.
-- **RNF02** - O tempo de resposta para qualquer operação não deve exceder 3 segundos.
+### Usabilidade
 
-### **2. Segurança**
+- **RNF06** – O app deve ser intuitivo e simples, focado em moradores com pouca familiaridade tecnológica.
+- **RNF07** – As notificações devem ser enviadas de forma clara e direta, com linguagem acessível.
+- **RNF08** – A interface deve funcionar bem em dispositivos Android (foco inicial).
 
-- **RNF03** - O sistema deve utilizar autenticação JWT para login seguro.
-- **RNF04** - Os dados sensíveis devem ser armazenados de forma criptografada.
-- **RNF05** - O sistema deve ter um mecanismo de recuperação de senha via e-mail.
+### Performance
 
-### **3. Usabilidade e Acessibilidade**
+- **RNF09** – O sistema deve processar notificações em **tempo real** ou próximo disso.
+- **RNF10** – O app deve funcionar de forma fluida mesmo com conexão de internet instável, mantendo dados locais temporários.
 
-- **RNF06** - O aplicativo deve seguir boas práticas de UI/UX para facilitar a navegação dos usuários.
-- **RNF07** - O sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela.
+### Segurança
 
-### **4. Manutenibilidade e Tecnologia**
+- **RNF11** – O sistema não deve expor dados de clientes ou pedidos para usuários não autorizados.
+- **RNF12** – Entregadores só devem ter acesso aos pedidos que estão autorizados a entregar.
+- **RNF13** – O sistema deve armazenar **CPFs de forma segura e criptografada**, garantindo conformidade com a LGPD (Lei Geral de Proteção de Dados).
+- **RNF14** – O CPF será utilizado apenas internamente para **vinculação de pedidos e identificação do cliente**, sem exposição pública.
 
-- **RNF08** - O backend deve ser desenvolvido em Django + Django Rest Framework.
-- **RNF09** - O frontend do aplicativo deve ser desenvolvido em React Native.
-- **RNF10** - O código deve ser modular para facilitar futuras atualizações.
+---
