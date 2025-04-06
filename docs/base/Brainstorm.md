@@ -26,57 +26,57 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 
 ### **1. Qual o objetivo principal da aplicação?**
 
-- **XXXX** – Criar uma plataforma que centralize pedidos e entregas de diferentes canais (restaurantes, e-commerces, marketplaces) com acompanhamento em tempo real.
-- **YYYY** – Substituir canais informais como WhatsApp para acompanhamento de pedidos, usando um app completo com chat, notificações e status atualizados.
-- **ZZZZ** – Facilitar a operação logística da Ilha Primeira, oferecendo rastreio detalhado desde a saída do continente até a entrega final.
-- **WWWW** – Oferecer uma solução completa e white-label que possa futuramente ser expandida para outras ilhas ou regiões com logística semelhante.
-- **AAAA** – Reduzir a dependência de operadores manuais para atualizações de status, usando notificações automáticas e painel de gerenciamento.
+- **XXXX** – Fornecer uma solução logística rápida e eficiente para entregas de produtos e alimentos à Ilha Primeira.
+- **YYYY** – Integrar o recebimento de pedidos de grandes plataformas (iFood, Amazon, etc.) com o sistema interno da empresa.
+- **ZZZZ** – Otimizar a comunicação entre entregadores marítimos, pontos de coleta e o entregador local na ilha.
+- **WWWW** – Oferecer segurança e rastreabilidade tanto para o cliente quanto para a operação.
+- **AAAA** – Minimizar atrasos causados por fatores externos como clima, tráfego marítimo ou indisponibilidade de pessoal.
 
 ---
 
 ### **2. Como será o processo para cadastrar um novo cliente?**
 
-- **XXXX** – O cliente poderá se cadastrar diretamente no app com nome, e-mail, telefone e endereço de entrega.
-- **YYYY** – Após o cadastro, o cliente terá acesso ao painel com pedidos em andamento, histórico e estabelecimentos disponíveis.
-- **ZZZZ** – Poderá haver login com redes sociais (Google, Facebook) para agilizar o cadastro.
-- **WWWW** – Clientes poderão cadastrar múltiplos endereços e definir favoritos para pedidos recorrentes.
+- **XXXX** – O cliente realiza o pedido diretamente em plataformas como iFood ou Amazon.
+- **YYYY** – O sistema da Jet Entregas detecta ou recebe esse pedido e o transforma em uma solicitação interna.
+- **ZZZZ** – O entregador marítimo recebe a notificação via aplicativo interno com as informações do pedido, ponto de retirada e destino.
+- **WWWW** – O sistema também registra informações do destinatário na ilha e aciona o entregador local para finalizar a entrega.
 
 ---
 
 ### **3. Como será a forma de adicionar produtos?**
 
-- **XXXX** – Apenas administradores de estabelecimentos cadastrados poderão adicionar/editar produtos no sistema.
-- **YYYY** – Os produtos terão nome, descrição, imagem, categoria, preço, tempo estimado de entrega e disponibilidade.
-- **ZZZZ** – A aplicação permitirá integração com catálogos externos (ex: Shopify, WooCommerce, marketplaces) para automação do cadastro.
-- **WWWW** – Será possível aplicar promoções e descontos personalizados para determinados produtos ou categorias.
+- **XXXX** – Os produtos não serão adicionados diretamente na plataforma Jet Entregas, mas sim recebidos a partir das plataformas originais (iFood, Amazon, etc.).
+- **YYYY** – A aplicação interna irá apenas registrar e organizar os pedidos recebidos, com dados como: tipo de produto, peso, ponto de retirada e horário.
+- **ZZZZ** – Para entregas específicas ou diretas (ex: de lojas parceiras locais), poderá haver um módulo simples de cadastro de produto/solicitação de entrega pelo parceiro.
 
 ---
 
 ### **4. Outras perguntas pertinentes ao contexto**
 
-- **XXXX** – Os entregadores poderão mudar o status do pedido manualmente conforme a entrega evolui (ex: saiu para entrega, chegou na ilha, entregue).
-- **YYYY** – Os clientes receberão notificações automáticas (push ou WhatsApp API) com cada atualização de status.
-- **ZZZZ** – O sistema terá uma área de administração com painel analítico para acompanhar pedidos, entregadores e status em tempo real.
-- **WWWW** – Será possível adicionar avaliações pós-entrega para entregadores e estabelecimentos.
-- **VVVV** – Os estabelecimentos poderão ver métricas como número de pedidos entregues, tempo médio de entrega e cancelamentos.
+- **XXXX** – Como será feita a validação das condições climáticas antes de iniciar a entrega?
+- **YYYY** – Quais serão os procedimentos em caso de atraso ou falha no transporte marítimo?
+- **ZZZZ** – Como será definido o ponto de retirada do pedido no continente?
+- **WWWW** – O sistema terá controle de escala dos entregadores por turno?
+- **VVVV** – Como será o armazenamento temporário no galpão em casos de risco climático?
+- **JJJJ** - O que acontece se o entregador local da ilha estiver indisponível?
+- **FFFF** - O cliente poderá rastrear a entrega via link ou app?
 
 ---
 
 ### **5. Como seria a forma de adicionar produtos pelo cliente?**
 
-- **XXX** – O cliente seleciona os produtos disponíveis em estabelecimentos listados e adiciona ao carrinho.
-- **YYY** – Será possível editar o pedido, escolher adicionais, comentários (ex: sem cebola), e visualizar o tempo estimado.
-- **ZZZ** – Após confirmar o pedido, o cliente poderá acompanhar todo o processo no app, com opção de chat com o entregador.
-
+- **XXX** – Através de um formulário simples no app ou site da Jet Entregas.
+- **YYY** – Informando nome, item, endereço de entrega na ilha, ponto de retirada e contato.
+- **ZZZ** – Após o preenchimento, o sistema gera a entrega interna como se fosse uma “entrega direta” (útil para entregas pessoais, documentos, encomendas fora de marketplaces).
 ---
 
 ### **6. Quais informações seriam interessantes para o cliente?**
 
-- **XXX** – Status atualizado em tempo real com etapas personalizadas como "chegou no galpão", "em trânsito", "chegou na ilha", "entregue".
-- **YYYY** – Tempo estimado de entrega com base em entregas anteriores + localização atual do pedido.
-- **ZZZZ** – Histórico de pedidos com detalhes, possibilidade de repetir pedido anterior e exportar comprovante.
-- **WWWW** – Acesso a chat com entregador e notificações visuais/sonoras para cada alteração no status.
-- **VVVV** – Mapa com o trajeto da entrega (se disponível) ou status textual com última atualização.
+- **XXX** – Status da entrega em tempo real (ex: “Pedido chegou ao ponto de coleta”, “Jetski em rota”, “Entregador da ilha a caminho”).
+- **YYYY** – Notificações sobre atrasos, clima ou reprogramação de entrega.
+- **ZZZZ** – Previsão de horário de chegada e histórico de pedidos.
+- **WWWW** – Foto ou confirmação visual de entrega (ex: QR code ou assinatura digital).
+- **VVVV** – Canal de suporte direto com a equipe da Jet Entregas.
 
 
 ### Requisitos elicitados
