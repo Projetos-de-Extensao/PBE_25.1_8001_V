@@ -16,7 +16,9 @@
 
 
 ## Sobre 
-Nosso projeto tem como objetivo desenvolver um aplicativo para facilitar a comunicação e acompanhamento dos pedidos entre a Ilha Delivery e os consumidores da Ilha Primeira, substituindo o WhatsApp e visando melhorar a organização dos pedidos, a comunicação entre consumidor e entregador, e automatizar o processo de entregas.
+**JetEntregas** é uma plataforma que atua como intermediadora logística especializada em entregas para regiões de difícil acesso — como a Ilha Primeira.
+
+O cliente faz um pedido normalmente em plataformas como **iFood, Amazon, Mercado Livre**, etc., com **endereço de entrega registrado para a Ilha Primeira**. O sistema do JetEntregas reconhece esse pedido ao **cruzar os dados de endereço** com os cadastros da plataforma e **vincula automaticamente ao perfil do cliente** no app da JetEntregas.s.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
