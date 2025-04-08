@@ -63,7 +63,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../prototipo_alta_fidelidade/">Protótipo</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../requisitos/">Requisitos do Sistema</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../requisitos/">Requisitos</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Interacao</span></p>
@@ -120,53 +120,58 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
 
 <h2 id="brainstorm">Brainstorm</h2>
-<p><img alt="Mapa Mental" src="https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Mapas%20Mentais/mapaMental.png" /></p>
-<h2 id="versao-10">Versão 1.0</h2>
-<h2 id="perguntas">Perguntas</h2>
+<p><img alt="Mapa Mental" src="https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V/blob/main/docs/assets/Mapas%20Mentais/mapaMental2.png" /></p>
+<h2 id="versao-10"><strong>Versão 1.0</strong></h2>
+<h2 id="perguntas"><strong>Perguntas</strong></h2>
+<hr />
 <h3 id="1-qual-o-objetivo-principal-da-aplicacao"><strong>1. Qual o objetivo principal da aplicação?</strong></h3>
 <ul>
-<li><strong>XXXX</strong> - Deve ser uma plataforma onde qualquer pessoa possa cadastrar pedidos de diferentes estabelecimentos e acompanhar sua entrega em tempo real.  </li>
-<li><strong>ZZZ</strong> - A plataforma deve fornecer um meio eficiente de comunicação entre os clientes, entregadores e o Ilha Delivery, substituindo o WhatsApp como principal ferramenta de acompanhamento.  </li>
-<li><strong>YYYY</strong> - O objetivo da aplicação é facilitar a logística de entregas para a Ilha Primeira, permitindo que usuários acompanhem pedidos de restaurantes, e-commerces e marketplaces como Amazon.  </li>
-<li><strong>WWWW</strong> - O principal objetivo da aplicação é a centralização da comunicação e do rastreamento de pedidos, oferecendo uma experiência similar ao iFood, mas aplicável a qualquer tipo de compra.  </li>
-<li><strong>KKKK</strong> - A plataforma deve gerenciar pedidos de diferentes origens, mostrar atualizações de status e permitir que clientes façam pagamentos diretamente pelo app.  </li>
+<li><strong>JetEntregas</strong> – Facilitar a entrega de pedidos online para moradores da Ilha Primeira.</li>
+<li><strong>Automatizar a entrega</strong> – Notificar automaticamente o cliente assim que o pedido chegar ao locker.</li>
+<li><strong>Resolver o gargalo logístico</strong> – Intermediar a entrega entre terra firme e ilha com agilidade.</li>
+<li><strong>Atender regiões de difícil acesso</strong> – Criar uma solução de última milha eficiente para locais isolados.</li>
+<li><strong>Centralizar informações de entrega</strong> – O app concentra status, histórico e notificações.</li>
 </ul>
 <hr />
 <h3 id="2-como-sera-o-processo-para-cadastrar-um-novo-cliente"><strong>2. Como será o processo para cadastrar um novo cliente?</strong></h3>
 <ul>
-<li><strong>XXXX</strong> - O moderador deverá fazer login e validar o cadastro de novos estabelecimentos.  </li>
-<li><strong>YYYY</strong> - O cliente poderá se cadastrar livremente para acompanhar suas entregas e realizar pedidos.  </li>
-<li><strong>WWWW</strong> - Com o usuário logado, ele poderá visualizar os estabelecimentos disponíveis e solicitar produtos.  </li>
-<li><strong>ZZZZ</strong> - O cliente poderá adicionar seu endereço de entrega e acompanhar suas compras em tempo real.  </li>
-<li><strong>KKK</strong> - Qualquer usuário que quiser ser entregador poderá se cadastrar diretamente no app.  </li>
+<li>O cliente se cadastra no app <strong>JetEntregas</strong>, informando endereço completo (incluindo ilha).</li>
+<li>O app usa o endereço e CPF como identificador para <strong>vincular pedidos futuros</strong> feitos em plataformas como iFood/Amazon.</li>
+<li>Não há necessidade de o cliente informar o pedido manualmente.</li>
+<li>O vínculo inicial é feito <strong>comparando o endereço e CPF</strong>; futuramente será por <strong>integração via API</strong>.</li>
 </ul>
 <hr />
-<h3 id="3-como-sera-a-forma-de-adicionar-produtos"><strong>3. Como será a forma de adicionar produtos?</strong></h3>
+<h3 id="3-como-sera-a-forma-de-adicionar-pedidos"><strong>3. Como será a forma de adicionar pedidos?</strong></h3>
 <ul>
-<li><strong>XXXX</strong> - Apenas restaurantes, lojas e e-commerces cadastrados poderão adicionar produtos ao sistema.  </li>
-<li><strong>YYYYY</strong> - O produto terá uma descrição, preço, categoria e tempo estimado de entrega.  </li>
-<li><strong>ZZZZ</strong> - Os produtos disponíveis variam conforme os estabelecimentos cadastrados, podendo incluir desde refeições até itens de e-commerce.  </li>
-<li><strong>XXXX</strong> - O sistema permitirá integração com lojas externas como Amazon e marketplaces para acompanhamento de pedidos.  </li>
+<li>O cliente <strong>não adiciona manualmente</strong> o pedido.</li>
+<li>O sistema detecta automaticamente quando um pedido de e-commerce é entregue no <strong>locker da JetEntregas</strong>.</li>
+<li>O pedido é então <strong>vinculado automaticamente</strong> ao perfil do cliente com base no endereço de entrega e CPF.</li>
+<li>Após isso, o cliente é <strong>notificado pelo app</strong> que o pedido chegou e está a caminho da ilha.</li>
 </ul>
 <hr />
 <h3 id="4-outras-perguntas-pertinentes-ao-contexto"><strong>4. Outras perguntas pertinentes ao contexto</strong></h3>
 <ul>
-<li><strong>XXXX</strong> - Com a localização ativa, os clientes poderão visualizar o status da entrega em tempo real.  </li>
-<li><strong>YYYY</strong> - O cliente terá acesso a atualizações de status, como "chegou ao galpão do Ilha Delivery", "em trânsito para a ilha", "chegou na ilha" e "entregue".  </li>
-<li><strong>ZZZ</strong> - A comunicação entre clientes e entregadores será feita diretamente dentro do app, eliminando a necessidade do WhatsApp.  </li>
+<li>O entregador da JetEntregas tem acesso aos lockers com chave/código.</li>
+<li>O sistema notifica o entregador sobre novos pedidos a serem retirados.</li>
+<li>Toda a operação de retirada e entrega é feita por <strong>um funcionário fixo</strong> da JetEntregas, com carteira de jetski.</li>
+<li>O locker é o ponto de transição entre o <strong>e-commerce tradicional e a entrega Jet</strong>.</li>
+<li>Não há necessidade de o cliente interagir com entregadores do iFood/Amazon.</li>
 </ul>
 <hr />
-<h3 id="5-como-seria-a-forma-de-adicionar-produtos-pelo-cliente"><strong>5. Como seria a forma de adicionar produtos pelo cliente?</strong></h3>
+<h3 id="5-como-seria-a-forma-do-cliente-adicionar-os-pedidos"><strong>5. Como seria a forma do cliente adicionar os pedidos?</strong></h3>
 <ul>
-<li><strong>XXX</strong> - O cliente poderá selecionar produtos dentro dos estabelecimentos cadastrados e adicionar ao carrinho.  </li>
-<li><strong>YYY</strong> - Será possível personalizar pedidos, como escolher opções adicionais ou remover itens específicos.  </li>
+<li>O cliente <strong>não precisa adicionar manualmente</strong>.</li>
+<li>O sistema faz o match automático com o endereço.</li>
+<li>No futuro, o sistema poderá integrar com as APIs de marketplaces para <strong>vinculação instantânea e automática</strong>.</li>
 </ul>
 <hr />
 <h3 id="6-quais-informacoes-seriam-interessantes-para-o-cliente"><strong>6. Quais informações seriam interessantes para o cliente?</strong></h3>
 <ul>
-<li><strong>XXX</strong> - Informações detalhadas sobre o status do pedido em tempo real.  </li>
-<li><strong>ZZZZ</strong> - O cliente usuário poderá acessar informações sobre tempo estimado de entrega, histórico de pedidos e status da entrega.  </li>
-<li><strong>WWWW</strong> - O usuário poderá visualizar uma linha do tempo da entrega, incluindo status como "chegou ao galpão", "em trânsito" e "entregue".  </li>
+<li>Status do pedido (Ex: “Pedido chegou ao locker”, “Pedido a caminho da ilha”, “Pedido entregue”).</li>
+<li>Notificações push com cada etapa da entrega.</li>
+<li>Histórico de pedidos entregues.</li>
+<li>Dados do entregador (nome, horário estimado de entrega, etc).</li>
+<li>Localização aproximada do entregador quando estiver em rota.</li>
 </ul>
 <h3 id="requisitos-elicitados">Requisitos elicitados</h3>
 <table>

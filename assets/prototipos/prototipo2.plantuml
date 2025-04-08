@@ -1,0 +1,21 @@
+@startsalt
+{
+{+
+  JetEntregas - Tela Principal 🛥️
+
+  Bem-vindo, [Nome do Usuário] 👋
+  Endereço: Ilha do Sol - Casa 12
+  Próxima entrega: 📦 Pedido #45612
+  Status: Aguardando retirada no ponto âncora 🚧
+
+  Últimas Ações
+  ---------------------------
+  Última entrega: ✅ Entregue ontem às 14h
+}
+
+[ 📦 Checar Status de Entregas ]
+[ 🕘 Histórico de Pedidos      ]
+[ ✏️ Editar Informações        ]
+[ 🚪 Sair                      ]
+}
+@endsalt

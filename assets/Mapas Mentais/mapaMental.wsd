@@ -1,0 +1,26 @@
+@startmindmap
+* JetEntregas
+** Objetivo
+*** Facilitar entregas para moradores da Ilha Primeira
+*** Resolver problema logístico de acesso
+*** Automatizar fluxo entre e-commerces/ifood e moradores
+** Como funciona
+*** Cliente compra via Amazon/iFood
+*** Entrega é feita em locker (terra firme)
+*** App reconhece pedido pelo endereço
+*** Entregador faz entrega via jetski
+** App JetEntregas
+*** Cliente recebe notificação quando pedido chega
+*** Acompanha status da entrega
+*** Visualiza histórico de pedidos
+-- Entregador Jet
+--- Funcionário fixo da JetEntregas
+--- Carteira de jetski obrigatória
+--- Retira no locker e entrega na Ilha
+-- Cadastro de usuários
+--- Via conta google ou correlatas
+--- Conta atrelada ao endereço e CPF do Cliente
+-- Futuro
+--- Integração via API com e-commerces
+--- Expansão para outras ilhas e regiões remotas
+@endmindmap

@@ -1,0 +1,49 @@
+@startuml
+
+class Cliente {
+  +nome: String
+  +cpf: String
+  +endereco: String
+  +telefone: String
+  +visualizarPedidos(): List<Pedido>
+}
+
+class Pedido {
+  +id: String
+  +status: String
+  +dataRecebimento: Date
+  +dataEntrega: Date
+  +cliente: Cliente
+  +locker: Locker
+  +entregador: EntregadorJet
+  +notificarCliente(): void
+}
+
+class EntregadorJet {
+  +nome: String
+  +matricula: String
+  +possuiCarteiraJetski: Boolean
+  +retirarDoLocker(p: Pedido): void
+  +marcarComoEntregue(p: Pedido): void
+}
+
+class Locker {
+  +id: String
+  +localizacao: String
+  +armazenarPedido(p: Pedido): void
+}
+
+class Notificacao {
+  +id: String
+  +mensagem: String
+  +dataHora: Date
+  +enviarPara(cliente: Cliente): void
+}
+
+Cliente --> Pedido
+Pedido --> Locker
+Pedido --> EntregadorJet
+Pedido  --> Notificacao
+Cliente --> Notificacao
+
+@enduml
