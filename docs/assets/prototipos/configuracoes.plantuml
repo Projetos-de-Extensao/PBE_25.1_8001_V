@@ -1,0 +1,20 @@
+@startsalt
+{
+{+
+  JetEntregas - Configurações ⚙️
+
+  Notificações:          | ^Ativar / Desativar^
+  Atualizar Endereço:    | "___________________"
+  Atualizar Telefone:    | "___________________"
+  Tema:                  | ^Claro / Escuro^
+
+  Preferências de Entrega
+  ---------------------------
+  Local padrão de entrega: | "Ponto Âncora 2"
+  Permitir locker automático: | ^Sim / Não^
+}
+
+[ 💾 Salvar Alterações ]
+[ 🔙 Voltar ]
+}
+@endsalt

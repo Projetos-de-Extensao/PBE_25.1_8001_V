@@ -1,0 +1,21 @@
+@startsalt
+{
+{+
+  JetEntregas - Histórico de Pedidos 📜
+
+  Bem-vindo, [Nome do Usuário] 👋
+  Total de pedidos: 6
+
+  Histórico
+  ---------------------------
+  📦 Pedido #45612 — ✅ Entregue 
+  📦 Pedido #45598 — ✅ Entregue 
+  📦 Pedido #45531 — ❌ Cancelado 
+  📦 Pedido #45480 — ✅ Entregue 
+  📦 Pedido #45420 — 🔄 Em andamento
+  
+}
+
+[ 🔙 Voltar à Tela Principal  ]
+}
+@endsalt

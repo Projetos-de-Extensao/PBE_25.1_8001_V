@@ -1,0 +1,22 @@
+@startsalt
+{
+{+
+  JetEntregas - Minha Conta 👤
+
+  Nome:        | João da Ilha
+  CPF:         | 123.456.789-00
+  Endereço:    | Ilha Primeira, Casa 7
+  Telefone:    | (21) 99999-9999
+  Email:       | joaodailha@email.com
+
+  Plano de Entrega:      | Básico (Grátis)
+  Entregas Realizadas:   | 24
+  Último Acesso:         | Hoje às 08:42
+
+}
+
+[ ✏️ Editar Informações ]
+[ 🔐 Alterar Senha ]
+[ 🚪 Sair ]
+}
+@endsalt

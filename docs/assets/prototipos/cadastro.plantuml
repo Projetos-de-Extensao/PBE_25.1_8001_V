@@ -1,0 +1,18 @@
+@startsalt
+{
+{+
+  JetEntregas - Cadastro de Conta 🛥️
+
+  Nome completo:        | "___________________"
+  CPF:                  | "___________________"
+  Endereço:             | "___________________"
+  Telefone:             | "___________________"
+  Email:                | "___________________"
+  Senha:                | "__________"
+  Confirmar Senha:      | "__________"
+}
+
+[ ✅ Cadastrar ]
+[ 🔙 Voltar ao Login ]
+}
+@endsalt
