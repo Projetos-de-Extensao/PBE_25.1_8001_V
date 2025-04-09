@@ -1,49 +1,70 @@
 @startuml
 
-class Cliente {
-  +nome: String
-  +cpf: String
-  +endereco: String
-  +telefone: String
-  +visualizarPedidos(): List<Pedido>
+class Usuario {
+  nome: String
+  cpf: String
+  email: String
+  senha: String
+  realizarLogin(email: String, senha: String): boolean
+  alterarSenha(senhaAtual: String, novaSenha: String): void
 }
 
-class Pedido {
-  +id: String
-  +status: String
-  +dataRecebimento: Date
-  +dataEntrega: Date
-  +cliente: Cliente
-  +locker: Locker
-  +entregador: EntregadorJet
-  +notificarCliente(): void
+class Cliente {
+  endereco: String
+  telefone: String
+  visualizarPedidos(): List<Pedido>
+  realizarPagamento(pedido: Pedido): void
 }
 
 class EntregadorJet {
-  +nome: String
-  +matricula: String
-  +possuiCarteiraJetski: Boolean
-  +retirarDoLocker(p: Pedido): void
-  +marcarComoEntregue(p: Pedido): void
+  matricula: String
+  possuiCarteiraJetski: Boolean
+  retirarDoLocker(p: Pedido): void
+  marcarComoEntregue(p: Pedido): void
+}
+
+class Pedido {
+  id: String
+  status: String
+  dataRecebimento: Date
+  dataEntrega: Date
+  notificarCliente(): void
 }
 
 class Locker {
-  +id: String
-  +localizacao: String
-  +armazenarPedido(p: Pedido): void
+  id: String
+  localizacao: String
+  armazenarPedido(p: Pedido): void
 }
 
 class Notificacao {
-  +id: String
-  +mensagem: String
-  +dataHora: Date
-  +enviarPara(cliente: Cliente): void
+  id: String
+  mensagem: String
+  dataHora: Date
 }
 
-Cliente --> Pedido
-Pedido --> Locker
-Pedido --> EntregadorJet
-Pedido  --> Notificacao
-Cliente --> Notificacao
+class ServicoDeNotificacao {
+  enviarNotificacao(mensagem: String, destino: Cliente): void
+}
+
+class Pagamento {
+  id: String
+  valor: Float
+  status: String
+  metodo: String
+  processarPagamento(): boolean
+}
+
+
+Usuario <|-- Cliente
+Usuario <|-- EntregadorJet
+
+Cliente  -->  Pedido
+Cliente  -->  Notificacao
+Pedido  -->  Locker
+Pedido  -->  EntregadorJet
+Pedido  -->  Notificacao
+Pedido  -->  Pagamento
+Pedido --> ServicoDeNotificacao
 
 @enduml

@@ -3,8 +3,8 @@ left to right direction
 
 actor Cliente
 actor "Entregador Jet" as Entregador
-actor Sistema
 actor Admin
+
 
 package "App JetEntregas" {
     usecase "Cadastrar-se" as UC01
@@ -13,25 +13,25 @@ package "App JetEntregas" {
     usecase "Receber notificação de pedido" as UC04
     usecase "Visualizar status do pedido" as UC05
     usecase "Visualizar histórico de entregas" as UC06
-}
-
-package "Entrega Jet" {
     usecase "Visualizar pedidos no locker" as UC08
     usecase "Confirmar retirada do locker" as UC09
     usecase "Marcar como entregue" as UC10
+}
+
+
+
+package "Administração" {
+    usecase "Gerenciar entregadores" as UC15
+    usecase "Visualizar relatórios" as UC16
 }
 
 package "Sistema" {
     usecase "Vincular pedido via CPF + Endereço" as UC11
     usecase "Notificar cliente" as UC13
     usecase "Registrar logs de entrega" as UC14
-    usecase "Integrar com APIs de marketplaces" as UC12
 }
 
-package "Administração" {
-    usecase "Gerenciar entregadores" as UC15
-    usecase "Visualizar relatórios" as UC16
-}
+actor Sistemas
 
 Cliente --> UC01
 Cliente --> UC02
@@ -45,16 +45,21 @@ Entregador --> UC08
 Entregador --> UC09
 Entregador --> UC10
 
-UC04 <-- UC13
-UC05 <-- UC11
-UC08 <-- UC11
+
+
+UC04 --> UC13 : <<include>>
+UC05 --> UC11 : <<include>>
+UC08 --> UC11 : <<include>>
 UC03 --> UC11 : <<include>>
-UC11 --> UC12 : <<extend>>
 
 UC09 --> UC14 : <<include>>
 UC10 --> UC14 : <<include>>
 
 Admin --> UC15
 Admin --> UC16
+
+Sistemas --> UC11
+Sistemas --> UC13
+Sistemas --> UC14
 
 @enduml
