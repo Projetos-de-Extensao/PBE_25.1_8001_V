@@ -1,0 +1,22 @@
+@startsalt
+{
+{+
+  JetEntregas - Painel do Entregador 🚚🛥️
+
+  Nome:         | Carlos dos Jets
+  Turno:        | Manhã (08:00 - 14:00)
+  Status:       | 🟢 Disponível
+  Local Atual:  | Ponto Âncora 3 - Doca Sul
+
+  Entregas Pendentes:     | 3
+  Locker para Buscar:     | Locker 5B
+  Total de Entregas Hoje: | 7
+
+}
+
+[ 📦 Ver Entregas Pendentes ]
+[ 📍 Navegar até Locker ]
+[ 📤 Marcar Entrega Realizada ]
+[ 🚪 Encerrar Turno ]
+}
+@endsalt
